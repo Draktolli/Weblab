@@ -1,0 +1,146 @@
+.emailtab{
+    margin-left: 200px;
+}
+body{
+    background-color: #633D98;
+}
+h1{
+    text-align:center;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:2vw;
+}
+footer{
+    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1vw;
+    font-weight:bold;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.pages_text{
+    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-weight:bold;
+}
+.info{
+    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1vw;
+}
+.quote{
+    font-family: "Times New Roman", Times, serif;
+    text-align:center;
+    font-size:1vw;
+}
+.arcanastyle:hover{
+    font-family: "Times New Roman", Times, serif;
+    font-weight:bold;
+    color: #60FC08;
+}
+.immortalstyle:hover{
+    font-family: "Times New Roman", Times, serif;
+    font-weight:bold;
+    color: #CBD907;
+}
+.legendarysryle:hover{
+    font-family: "Times New Roman", Times, serif;
+    font-weight:bold;
+    color: #B807D9;
+}
+.mythicalstyle:hover{
+    font-family: "Times New Roman", Times, serif;
+    font-weight:bold;
+    color: #9907D9;
+}
+.setsstyle:hover{
+    font-family: "Times New Roman", Times, serif;
+    font-weight:bold;
+    background: #000000;
+    color: white;
+}
+.otherstyle:hover{
+    font-family: "Times New Roman", Times, serif;
+    font-weight:bold;
+    color: #13DDF0;
+}
+.sectionname{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.5vw;
+    font-weight:bold;
+}
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-row-gap: 3vw;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(166px, 1fr));
+}
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.popularstyle{
+    margin: -0.5vw 0 0 0;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:0.7vw;
+    font-weight:bold;
+}
+
+.headcontainer {
+    display: grid;
+    width: 100%;
+    grid-row-gap: 2vw;
+    grid-auto-columns: minmax(100px, 20%);
+    grid-auto-flow: column;
+}
+.noHover{
+    pointer-events: none;
+}
+.headcontainer div a {
+    text-align: center;
+    display:block;
+    color:#FFF;
+    font-size:20px;
+    line-height: 3vw;
+    text-decoration:none;
+}
+.headcontainer div a:hover {
+    background-color: #000000;
+}
+.headcontainer div {
+    background-color: #19165E;
+}
+.headcontainer div:hover > ul {
+    display:inherit;
+   }
+.headcontainer div ul {
+    display: none;
+}
+.headcontainer div ul li{
+    display:block;
+    padding:0;
+}
+.cost{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-weight:bold;
+    margin: 0 0 -0.5vw 0;
+}
+.info_text{
+    font-family: "Times New Roman", Times, serif;
+    font-weight:bold;
+    font-size:1vw;
+}
+.question{
+    font-family: "Times New Roman", Times, serif;
+    font-weight:bold;
+    font-size:1vw;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../mystyles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="../JS/loadtime.js"></script>
+    <script src = ../JS/currentpage.js></script>
+</head>
+<body>
+<header>
+    <div id = 'header' class="headcontainer">
+        <div><a href="../index.html">Главная</a></div>
+        <div><a class = arcanastyle href="Arcanas.html" id = arcanas>Arcana</a></div>
+        <div><a class = immortalstyle href="Immortals.html">Immortal</a></div>
+        <div><a class = legendarysryle href="Legendaries.html">Legendary</a></div>
+        <div><a class = setsstyle href="Sets.html">Sets</a></div>
+        <div>
+            <a class = otherstyle href="#">Другое</a>
+            <ul>
+                <li><a class = otherstyle href="#">Варды</a></li>
+                <li><a class = otherstyle href="#">Курьеры</a></li>
+                <li><a class = otherstyle href="#">Загрузочные экраны</a></li>
+                <li><a class = otherstyle href="#">Курсоры</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+</header>
+<main>
+<div class="container">
+    <div><p class = popularstyle>Fractal Horns of Inner Abysm</p><img src="../Images/TB_arc.png"><p class = cost>1999p</p></div>
+    <div><p class = popularstyle>Demon Eater</p><img src="../Images/Sf_arc.png"><p class = cost>1999p</p></div>
+    <div><p class = popularstyle>Bladeform Legacy</p><img src="../Images/Cosmetic_icon_Bladeform_Legacy.png"><p class = cost>1999p</p></div>
+    <div><p class = popularstyle>Feast_of_Abscession</p><img src="../Images/Cosmetic_icon_Feast_of_Abscession_Bundle.png"><p class = cost>1999p</p></div>
+    <div><p class = popularstyle>Great Sage's Reckoning</p><img src="../Images/Cosmetic_icon_Great_Sage's_Reckoning_Bundle.png"><p class = cost>1999p</p></div>
+    <div><p class = popularstyle>Tempest Helm of the Thundergod</p><img src="../Images/Cosmetic_icon_Tempest_Helm_of_the_Thundergod_Bundle.png"><p class = cost>1999p</p></div>
+    <div><p class = popularstyle>The Magus Cypher</p><img src="../Images/Cosmetic_icon_The_Magus_Cypher.png"><p class = cost>1999p</p></div>
+    <div><p class = popularstyle>Frost Avalanche</p><img src="../Images/Cosmetic_icon_Frost_Avalanche.png"><p class = cost>1999p</p></div>
+    <div><p class = popularstyle>Manifold Paradox</p><img src="../Images/300.png"><p class = cost>1999p</p></div>
+    <div><p class = popularstyle>Flockheart's Gamble </p><img src="../Images/330x192.png"><p class = cost>1999p</p></div>
+</div>
+</main>
+<footer> <br> <br> <script>
+    window.addEventListener("load", () => {
+        document.getElementById("demo").innerText = "Время загрузки страницы: " + loadTime + "c"
+        let str = window.location.href
+        disable(str.substr(str.lastIndexOf('/') + 1))
+    })
+</script>
+    <p id="demo">Время загрузки страницы:</p>
+</footer>
+</body>
+</html>

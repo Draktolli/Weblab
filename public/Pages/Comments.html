@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../mystyles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="../JS/loadtime.js"></script>
+</head>
+<body>
+<header>
+    <div id = 'header' class="headcontainer">
+        <div><a href="../index.html">Главная</a></div>
+        <div><a class = arcanastyle href="Arcanas.html">Arcana</a></div>
+        <div><a class = immortalstyle href="Immortals.html">Immortal</a></div>
+        <div><a class = legendarysryle href="Legendaries.html">Legendary</a></div>
+        <div><a class = setsstyle href="Sets.html">Sets</a></div>
+        <div>
+            <a class = otherstyle href="#">Другое</a>
+            <ul>
+                <li><a class = otherstyle href="#">Варды</a></li>
+                <li><a class = otherstyle href="#">Курьеры</a></li>
+                <li><a class = otherstyle href="#">Загрузочные экраны</a></li>
+                <li><a class = otherstyle href="#">Курсоры</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+</header>
+<main>
+    <h2 class="text-center p-3">Комментарии</h2>
+    <div style="margin-left: 20px" >
+        <div id="loadName">
+            <img class="rounded mx-auto d-block" id="preloader" src="../Images/load.gif" style="height: 200px; width: 200px;" >
+        </div>
+        <div class="row" id="comm_field" style="text-align: left;">
+        </div>
+    </div>
+</main>
+<footer>
+    <script>
+        window.addEventListener("load", () => document.getElementById("demo").innerText = "Время загрузки страницы: " + loadTime + "c")
+    </script>
+    <p id="demo">Время загрузки страницы:</p>
+    <script src="../JS/loadcomm.js"></script>
+</footer>
+</body>
+</html>

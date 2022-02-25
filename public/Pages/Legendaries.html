@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Legendary</title>
+    <link href="../mystyles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="../JS/loadtime.js"></script>
+</head>
+<body>
+<script src = ../JS/currentpage.js></script>
+<header>
+    <div id = 'header' class="headcontainer">
+        <div><a href="../index.html">Главная</a></div>
+        <div><a class = arcanastyle href="Arcanas.html">Arcana</a></div>
+        <div><a class = immortalstyle href="Immortals.html">Immortal</a></div>
+        <div><a class = legendarysryle href="Legendaries.html" id = legendaries>Legendary</a></div>
+        <div><a class = setsstyle href="Sets.html">Sets</a></div>
+        <div>
+            <a class = otherstyle href="#">Другое</a>
+            <ul>
+                <li><a class = otherstyle href="#">Варды</a></li>
+                <li><a class = otherstyle href="#">Курьеры</a></li>
+                <li><a class = otherstyle href="#">Загрузочные экраны</a></li>
+                <li><a class = otherstyle href="#">Курсоры</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+</header>
+<main>
+    <div class="container">
+    <div><p class = popularstyle>Battle Fury</p><img src="../Images/p1_41120151852920.png"><p class = cost>1500p</p></div>
+    <div><p class = popularstyle>Mirana Cat</p><img src="../Images/leg_2.png"><p class = cost>5300p</p></div>
+    <div><p class = popularstyle>Reaver</p><img src="../Images/leg_3.png"><p class = cost>700p</p></div>
+    <div><p class = popularstyle>Scythe of Vysel</p><img src="../Images/leg_4.png"><p class = cost>900p</p></div>
+</div>
+</main>
+<footer> <br> <br> <script>
+    window.addEventListener("load", () => {
+        document.getElementById("demo").innerText = "Время загрузки страницы: " + loadTime + "c"
+        let str = window.location.href
+        disable(str.substr(str.lastIndexOf('/') + 1))
+    })
+</script>
+    <p id="demo">Время загрузки страницы:</p>
+</footer>
+</body>
+</html>
