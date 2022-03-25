@@ -1,0 +1,36 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        title Legendary
+        link(href='../mystyles.css' rel='stylesheet')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+        include ../public/Components/Script
+    body
+        script(src='../JS/currentpage.js')
+        header
+            include ../public/Components/Header
+            br
+            br
+        main
+            .container
+                div
+                    p.popularstyle Battle Fury
+                    img(src='../Images/p1_41120151852920.png')
+                    p.cost 1500p
+                div
+                    p.popularstyle Mirana Cat
+                    img(src='../Images/leg_2.png')
+                    p.cost 5300p
+                div
+                    p.popularstyle Reaver
+                    img(src='../Images/leg_3.png')
+                    p.cost 700p
+                div
+                    p.popularstyle Scythe of Vysel
+                    img(src='../Images/leg_4.png')
+                    p.cost 900p
+        footer
+            br
+            br
+            include ../public/Components/footer

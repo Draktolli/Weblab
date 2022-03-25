@@ -1,0 +1,67 @@
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        title Title
+        link(href='../mystyles.css' rel='stylesheet')
+        link(href='../bootstrap.css' rel='stylesheet')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+        include ../public/Components/Script
+    body
+        include ../public/Components/Header
+            br
+            br
+            br
+            br
+        main
+            .container.col-lg-6
+                form(onsubmit='return false;')
+                    fieldset
+                        legend Ваши предложения по предметам
+                        .mb-3
+                            label.form-label(for='name') Название предмета:
+                            input#name.form-control(type='text' name='user_name')
+                        .mb-3
+                            label.form-label(for='num') Количество:
+                            input#num.form-control(type='text' name='user_name')
+                        .mb-3
+                            label.form-label(for='quality') Качество:
+                            select#quality.form-select(aria-label='Default select example')
+                                option(value='Immortal') Standart
+                                option(value='Legendary') Inscribed
+                                option(value='Mythical') Cursed
+                                option(value='Arcana') Autographed
+                                option(value='Set') Exalted
+                        .mb-3
+                            label.form-label(for='sugg') Другие пожелания(если нужно):
+                            input#sugg.form-control(type='text' name='user_name')
+                        button#appointment_add.btn.btn-primary Оставить заявку
+            .container.col-lg-6
+                h2.text-center.p-4 Ваша Запись:
+                form#delete(onsubmit='return false;')
+                    ul(style='list-style-type: none;padding: unset;')
+                        li
+                            .form-check.form-check
+                                input#check_name.form-check-input(type='checkbox')
+                                label.form-check-label(for='check_name') Показать Название предмета
+                        li
+                            .form-group.form-check
+                                input#check_num.form-check-input(type='checkbox')
+                                label.form-check-label(for='check_num') Показать Количество
+                        li
+                            .form-group.form-check
+                                input#check_quality.form-check-input(type='checkbox')
+                                label.form-check-label(for='check_quality') Показать качество
+                        li
+                            .form-group.form-check
+                                input#check_sugg.form-check-input(type='checkbox')
+                                label.form-check-label(for='check_sugg') Показать пожелания
+                    button#table_add.btn.btn-primary(style='margin-bottom: 10px') Показать таблицу
+            .container.col-12
+                .table-responsive
+                    table.table.table-striped
+                        thead.thead-dark
+                            tr#columnsTable_field.table-dark
+                        tbody#appointments_field
+        footer
+            include ../public/Components/footer
+            script(src='../JS/forn.js')
