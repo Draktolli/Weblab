@@ -1,0 +1,35 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        title Legendary
+        link(href='../mystyles.css' rel='stylesheet')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+        include ../public/Components/Script
+    body
+        header
+            include ../public/Components/Header
+            br
+            br
+        main
+            .container
+                div
+                    p.popularstyle Black Dk
+                    img(src='../Images/set_1.jpg' alt='loading')
+                    p.cost 3000p
+                div
+                    p.popularstyle Blackguard Magus
+                    img(src='../Images/set_2.png' alt='loading')
+                    p.cost 300p
+                div
+                    p.popularstyle Fate Meridian
+                    img(src='../Images/Cosmetic_icon_Fate_Meridian.png')
+                    p.cost 500p
+                div
+                    p.popularstyle Covenant of the Depths
+                    img(src='../Images/Cosmetic_icon_Covenant_of_the_Depths.png')
+                    p.cost 600p
+        footer
+            br
+            br
+            include ../public/Components/footer

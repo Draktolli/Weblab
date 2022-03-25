@@ -1,0 +1,80 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        title MyDotaShop
+        link(href='../mystyles.css' rel='stylesheet')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+        include ../public/Components/Script
+    body
+        header
+            include ../public/Components/Header
+            br
+            br
+            section
+                h1 Мой магазин игровых вещей в игре Dota 2
+            section
+                p.quote
+                    | Как говорил мой друг
+                    cite Даниил Шапошников
+                    |  —
+                    q Нет лучше подарка, чем арканка.
+                p
+            h4.sectionname
+                | Товары
+        main
+            strong(style='font-size:1vw;') Самые популярные предметы
+            br
+            br
+            .container
+                div
+                    p.popularstyle Fractal Horns of Inner Abysm
+                    img(src='../Images/TB_arc.png')
+                div
+                    p.popularstyle Demon Eater
+                    img(src='../Images/Sf_arc.png')
+                div
+                    p.popularstyle Hair of the Survivor
+                    img(src='../Images/AM_hair.png')
+                div
+                    p.popularstyle Magus Apex
+                    img(src='../Images/INV_imm.png')
+                div
+                    p.popularstyle Magus Accord
+                    img(src='../Images/INV_arm.png')
+                div
+                    p.popularstyle Dark Artistry
+                    img(src='../Images/INV_set.png')
+            br
+            br
+            br
+            br
+            section
+                strong(style='font-size:1vw;') если не найдете нужный товар, то мы его найдем через некоторое время
+                pre.
+                    \n                  ,-.       _,---._ __  / \
+                      /  )    .-'       `./ /   \
+                    (  (   ,'            `/    /|
+                      \  `-"             \'\   / |
+                        `.              ,  \ \ /  |
+                          /`.          ,'-`----Y   |
+                        (            ;        |   '
+                        |  ,-.    ,-'         |  /
+                        |  | (   |        hjw | /
+                        )  |  \  `.___________|/
+                        `--'   `--'
+            h3.info Информация
+            p.pages_text
+                a(href='Garant.html') Гарантии
+            p.pages_text
+                a(href='Questions_and_Answers.html') Q&A
+            p.pages_text
+                a(href='Suggestions.html') Предложения
+            p.pages_text
+                a(href='Comments.html') Комментарии
+            |     По техническим вопросам писать на почту
+            p
+                img(src='../Images/CM.jpg' width='300' height='300')
+            p.emailtab kkk@mail.ru
+        footer
+            include ../public/Components/footer
