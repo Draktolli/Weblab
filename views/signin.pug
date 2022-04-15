@@ -1,0 +1,30 @@
+doctype html
+meta(charset='utf-8')
+title Signin Template · Bootstrap v5.0
+link(href='../bootstrap.css' rel='stylesheet')
+style.
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+link(href='../signin.css' rel='stylesheet')
+main.form-signin
+    form(action='/login', method='GET')
+        h1.h3.mb-3.fw-normal Please sign in
+        .form-floating
+            input#floatingInput.form-control(type='email' placeholder='name@example.com')
+        .form-floating
+            input#floatingPassword.form-control(type='password' placeholder='Password')
+        .checkbox.mb-3
+            label
+                input(type='checkbox' value='remember-me')
+                |  Remember me
+        button.w-100.btn.btn-lg.btn-primary(type='submit') Sign in

@@ -1,0 +1,110 @@
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link href="../mystyles.css" rel="stylesheet"/>
+    <link href="../bootstrap.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="JS/loadtime.js"></script>
+    <script src="JS/currentpage.js"></script>
+  </head>
+  <body>
+    <div class="headcontainer" id="header">
+      <div><a id="lab1" href="/">Главная</a></div>
+      <div><a class="arcanastyle" href="Arcanas">Arcana</a></div>
+      <div><a class="immortalstyle" href="Immortals">Immortal</a></div>
+      <div><a class="legendarysryle" href="Legendaries">Legendary</a></div>
+      <div><a class="setsstyle" href="Sets">Sets</a></div>
+      <div><a class="otherstyle" href="#">Другое</a>
+        <ul>
+          <li><a class="otherstyle" href="#">Варды</a></li>
+          <li><a class="otherstyle" href="#">Курьеры</a></li>
+          <li><a class="otherstyle" href="#">Загрузочные экраны</a></li>
+          <li><a class="otherstyle" href="#">Курсоры</a></li>
+        </ul>
+      </div>
+      <div><a href="signin">Вход<br/><br/><br/><br/></a></div>
+    </div>
+    <main>
+      <div class="container col-lg-6">
+        <form onsubmit="return false;">
+          <fieldset>
+            <legend>Ваши предложения по предметам</legend>
+            <div class="mb-3">
+              <label class="form-label" for="name">Название предмета:</label>
+              <input class="form-control" id="name" type="text" name="user_name"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="num">Количество:</label>
+              <input class="form-control" id="num" type="text" name="user_name"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="quality">Качество:</label>
+              <select class="form-select" id="quality" aria-label="Default select example">
+                <option value="Immortal">Standart</option>
+                <option value="Legendary">Inscribed</option>
+                <option value="Mythical">Cursed</option>
+                <option value="Arcana">Autographed</option>
+                <option value="Set">Exalted</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="sugg">Другие пожелания(если нужно):</label>
+              <input class="form-control" id="sugg" type="text" name="user_name"/>
+            </div>
+            <button class="btn btn-primary" id="appointment_add">Оставить заявку</button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="container col-lg-6">
+        <h2 class="text-center p-4">Ваша Запись:</h2>
+        <form id="delete" onsubmit="return false;">
+          <ul style="list-style-type: none;padding: unset;">
+            <li>
+              <div class="form-check form-check">
+                <input class="form-check-input" id="check_name" type="checkbox"/>
+                <label class="form-check-label" for="check_name">Показать Название предмета</label>
+              </div>
+            </li>
+            <li>
+              <div class="form-group form-check">
+                <input class="form-check-input" id="check_num" type="checkbox"/>
+                <label class="form-check-label" for="check_num">Показать Количество</label>
+              </div>
+            </li>
+            <li>
+              <div class="form-group form-check">
+                <input class="form-check-input" id="check_quality" type="checkbox"/>
+                <label class="form-check-label" for="check_quality">Показать качество</label>
+              </div>
+            </li>
+            <li>
+              <div class="form-group form-check">
+                <input class="form-check-input" id="check_sugg" type="checkbox"/>
+                <label class="form-check-label" for="check_sugg">Показать пожелания</label>
+              </div>
+            </li>
+          </ul>
+          <button class="btn btn-primary" id="table_add" style="margin-bottom: 10px">Показать таблицу</button>
+        </form>
+      </div>
+      <div class="container col-12">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr class="table-dark" id="columnsTable_field"></tr>
+            </thead>
+            <tbody id="appointments_field"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <script>window.addEventListener("load", () => document.getElementById("demo").innerText = "Время загрузки страницы: " + loadTime + "c" + " (client) + " + loadTimeServer + "c" + " (server)")</script>
+      <p id="demo">&Vcy;&rcy;&iecy;&mcy;&yacy; &zcy;&acy;&gcy;&rcy;&ucy;&zcy;&kcy;&icy; &scy;&tcy;&rcy;&acy;&ncy;&icy;&tscy;&ycy;:</p>
+      <script src="../JS/forn.js"></script>
+      <script src="../JS/forn.js"></script>
+    </footer>
+  </body>
+</html>
