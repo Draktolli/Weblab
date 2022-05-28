@@ -1,13 +1,5 @@
 import { MiddlewareConsumer, Module, NestModule, RequestMethod } from "@nestjs/common";
 import { AppController } from './app.controller';
-<<<<<<< Updated upstream
-import { AppService } from './app.service';
-
-@Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
-=======
 import { AppService, LoggingInterceptor } from './app.service';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import { UserModule } from './user/user.module';
@@ -38,7 +30,6 @@ import { XMLMiddleware } from './xml.middleware';
       useClass: LoggingInterceptor,
     }, AppGateway
   ],
->>>>>>> Stashed changes
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
