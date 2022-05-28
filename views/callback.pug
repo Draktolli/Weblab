@@ -1,0 +1,32 @@
+doctype html
+head
+  title Калбэк
+  meta(charset='UTF-8')
+body
+  div
+    p.popularstyle Dark Artistry
+    img(src='../Images/yourmom.png')
+  script(src='https://cdn.jsdelivr.net/gh/supertokens/supertokens-website/bundle/bundle.js')
+  script.
+    window.addEventListener('load', async function(event) {
+      supertokens.init({
+        apiDomain: "http://localhost:1234",
+        apiBasePath: "/api"
+      });
+      let code = new URL(window.location.href).searchParams.get('code');
+      await fetch("http://localhost:1234/api/signinup", {
+        method: "POST",
+        headers: {
+          "rid": "thirdparty",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          code,
+          redirectURI: "http://localhost:1234/callback/github",
+          thirdPartyId: "github"
+        })
+      });
+
+      window.location.href = "/";
+
+    });
