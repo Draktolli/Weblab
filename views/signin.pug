@@ -1,0 +1,23 @@
+doctype html
+meta(charset='utf-8')
+title Signin Template · Bootstrap v5.0
+link(href='../bootstrap.css' rel='stylesheet')
+script(src='https://cdn.jsdelivr.net/gh/supertokens/supertokens-website/bundle/bundle.js')
+style.
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+link(href='../signin.css' rel='stylesheet')
+main.form-signin
+    form(onsubmit='return false;')
+        button.w-100.btn.btn-lg.btn-primary#login_via_github Sign in via github
+script(src='JS/auth.js')

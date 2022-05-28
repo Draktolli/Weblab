@@ -1,0 +1,31 @@
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        title Title
+        link(href='../mystyles.css' rel='stylesheet')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+        include ../public/Components/Script
+    body
+        header
+            if user === ''
+                include ../public/Components/Header
+            else
+                include ../public/Components/Header_authorised
+            br
+            br
+            br
+            br
+            section
+                p.question Как вы продаете предметы, которые нельзя купить?
+                p
+                    | После того как вы купили предмет вас даст ссылку на аккаунт, вы должны будете добавить его в друзья и ждать месяц (из-за системы Steam), после вам передадут эту вещь подарком
+                p.question Мне не пришел предмет через месяц, почему?
+                p
+                    | У вас не включена двухфакторная аутентификация, из-за этого по правилам Steam для передачи подарка нужно чтобы после добавления в друзья прошел не месяц, а год
+                p.question Почему Цены меньше, чем в Steam?
+                p
+                    | Так как в стиме есть стандартная комиссия в 15% при продаже, у нас же комиссия при пополнении и выводе средств
+                p.question Как узнать как скоро поступит товар?
+                p
+                    | в Разделе предложения можете оставлять запрос и наши модераторы через какое-то время ответят на ваш вопрос
+        include ../public/Components/footer

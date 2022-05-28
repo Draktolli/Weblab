@@ -1,0 +1,64 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        title Title
+        link(href='../mystyles.css' rel='stylesheet')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+        include ../public/Components/Script
+    body
+        header
+            if user === ''
+                include ../public/Components/Header
+            else
+                include ../public/Components/Header_authorised
+            br
+            br
+            br
+            br
+        main
+            .container
+                div
+                    p.popularstyle Fractal Horns of Inner Abysm
+                    img(src='../Images/TB_arc.png')
+                    p.cost 1999p
+                div
+                    p.popularstyle Demon Eater
+                    img(src='../Images/Sf_arc.png')
+                    p.cost 1999p
+                div
+                    p.popularstyle Bladeform Legacy
+                    img(src='../Images/Cosmetic_icon_Bladeform_Legacy.png')
+                    p.cost 1999p
+                div
+                    p.popularstyle Feast_of_Abscession
+                    img(src='../Images/Cosmetic_icon_Feast_of_Abscession_Bundle.png')
+                    p.cost 1999p
+                div
+                    p.popularstyle Great Sage's Reckoning
+                    img(src="../Images/Cosmetic_icon_Great_Sage's_Reckoning_Bundle.png")
+                    p.cost 1999p
+                div
+                    p.popularstyle Tempest Helm of the Thundergod
+                    img(src='../Images/Cosmetic_icon_Tempest_Helm_of_the_Thundergod_Bundle.png')
+                    p.cost 1999p
+                div
+                    p.popularstyle The Magus Cypher
+                    img(src='../Images/Cosmetic_icon_The_Magus_Cypher.png')
+                    p.cost 1999p
+                div
+                    p.popularstyle Frost Avalanche
+                    img(src='../Images/Cosmetic_icon_Frost_Avalanche.png')
+                    p.cost 1999p
+                div
+                    p.popularstyle Manifold Paradox
+                    img(src='../Images/300.png')
+                    p.cost 1999p
+                div
+                    p.popularstyle Flockheart's Gamble
+                    img(src='../Images/330x192.png')
+                    p.cost 1999p
+        footer
+            br
+            br
+            include ../public/Components/footer

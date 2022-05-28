@@ -1,0 +1,27 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        title Title
+        link(href='../mystyles.css' rel='stylesheet')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+        include ../public/Components/Script
+    body
+        header
+            if user === ''
+                include ../public/Components/Header
+            else
+                include ../public/Components/Header_authorised
+            br
+            br
+            br
+            br
+        main
+            h2.text-center.p-3 Комментарии
+            div(style='margin-left: 20px')
+                #loadName
+                    img#preloader.rounded.mx-auto.d-block(src='../Images/load.gif' style='height: 200px; width: 200px;')
+                #comm_field.row(style='text-align: left;')
+        footer
+            include ../public/Components/footer
+            script(src='../JS/loadcomm.js')
