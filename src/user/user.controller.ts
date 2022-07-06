@@ -22,7 +22,6 @@ import { Header } from '@nestjs/common'
 import { User } from './entities/user.entity';
 import { AuthGuard } from "../auth/auth.guard";
 import { ApiResponseModelProperty } from "@nestjs/swagger/dist/decorators/api-model-property.decorator";
-import { XML } from "../xml.decorator";
 
 export const carlistexResExample: string = `<?xml version="1.0"?> ...`
 
@@ -99,8 +98,8 @@ export class UserController {
   })
   @ApiOkResponse({ type: User })
   @ApiOkResponse({content: {'application/xml': {example: carlistexResExample}}})
-  async findOne(@Param('id', ParseIntPipe) id: string,  @XML() parsed: CreateUserDto):Promise<User> {
-    return await this.usersService.findOne(+id, parsed);
+  async findOne(@Param('id', ParseIntPipe) id: string):Promise<User> {
+    return await this.usersService.findOne(+id);
   }
 
   @ApiOperation({summary:"Update user"})

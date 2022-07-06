@@ -1,12 +1,13 @@
 import { MiddlewareConsumer, Module, NestModule, RequestMethod } from "@nestjs/common";
 import { AppController } from './app.controller';
-import { AppService, LoggingInterceptor } from './app.service';
+//import { AppService, LoggingInterceptor } from './app.service';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import { UserModule } from './user/user.module';
 import { ProductModule } from './product/product.module';
 import { AuthModule } from './auth/auth.module';
 import { AppGateway } from "./app.gateway";
 import { XMLMiddleware } from './xml.middleware';
+import { AppService } from "./app.service";
 
 @Module({
   imports: [ AuthModule.forRoot({
@@ -24,11 +25,7 @@ import { XMLMiddleware } from './xml.middleware';
   }),UserModule, ProductModule],
   controllers: [AppController],
   providers: [
-    AppService,
-    {
-      provide: APP_INTERCEPTOR,
-      useClass: LoggingInterceptor,
-    }, AppGateway
+     AppGateway
   ],
 })
 export class AppModule implements NestModule {
